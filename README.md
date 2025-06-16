@@ -8,3 +8,20 @@ problem:
 3. multi simulation morphing
 4. 
 5. 
+# Morphing Multiple Parts = Higher Risk of Geometry Conflicts
+(Challenge: Intersections & Collisions in Morphed Variants)
+
+When one design variable controls multiple components, morphing becomes powerful — but also fragile.
+
+In my case, changing the height of the car front window isn’t just about one surface.
+It also affects related parts like:
+
+Pillars
+
+Roof rail
+
+Inner trims
+
+Headliner
+
+✅ All of them were included in the morphing setup under the same design variable.
