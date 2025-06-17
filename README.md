@@ -25,3 +25,6 @@ Inner trims
 Headliner
 
 ✅ All of them were included in the morphing setup under the same design variable.
+
+Idea: Window 1 design variable breit--> apillar-- affect AP2 FMVSS201u 
+2 DV of Apillar: bea. distannce, wide..
