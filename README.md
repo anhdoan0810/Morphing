@@ -9,24 +9,17 @@ Sounds straightforward — but to make it work properly, the morphing setup had 
 
 # Complexity of Setup: Precision is Crucial
 Morphing only works well when the software fully understands your intent:
-
-Control entities – what is allowed to move (edges, surfaces, nodes)
-
-Constraint entities – what must stay fixed (boundaries, interfaces)
-
-Direction or path – how the deformation should be applied
-
-Guide paths / follower constraints – for curved or organic shapes
+-Control entities – what is allowed to move (edges, surfaces, nodes)
+-Constraint entities – what must stay fixed (boundaries, interfaces)
+-Direction or path – how the deformation should be applied
+-Guide paths / follower constraints – for curved or organic shapes
 
 Morphing parameters (design variables) – for parametric studies
 
 🛠️ Without these definitions, morphing can cause:
-
-Unwanted mesh distortion
-
-Poor element quality
-
-Interference with connected parts
+- Unwanted mesh distortion
+- Poor element quality
+- Interference with connected parts
 
 It’s not just “dragging a line” — it’s about giving the solver rules it can trust.
 
@@ -36,17 +29,15 @@ This approach surrounds your geometry in a control box, where selected faces or 
 
 This makes it much easier to:
 
-Define deformation directions precisely
-
-Apply smooth, uniform shape changes
-
-Preserve mesh quality in sensitive regions
-
-Link morphing to parametric design variables for optimization
+- Define deformation directions precisely
+- Apply smooth, uniform shape changes
+- Preserve mesh quality in sensitive regions
+- Link morphing to parametric design variables for optimization
 
 In my bumper case, box morphing allowed me to adjust the crash beam geometry without breaking mesh continuity or altering fixed connection areas.
 
 📌 In my upcoming post, I’ll share the before/after results of this study and the impact on crash simulation performance.
 
 FE Model: 2020 Nissan Rogue Model (https://www.ccsa.gmu.edu/models/2020-nissan-rogue/)
+
 Here is bumper crash simulation on a rigid wall!
