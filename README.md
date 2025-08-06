@@ -1,4 +1,5 @@
 # Introduction
+<img width="757" height="548" alt="crash drawio" src="https://github.com/user-attachments/assets/4915e91a-2e2b-4fd2-9525-589f2cffeadc" />
 Morphing Sounds Easy – Until You Have to Define It Precisely
 Morphing in CAE often looks simple from the outside — just “stretch” or “shift” the geometry, right?
 But in practice, precision in setup makes the difference between a clean, usable mesh and a distorted, solver-breaking model.
@@ -6,7 +7,7 @@ But in practice, precision in setup makes the difference between a clean, usable
 In my current crash simulation project, I’m morphing the front crash bar / bumper reinforcement / metal crash beam.
 Sounds straightforward — but to make it work properly, the morphing setup had to be clear, logical, and rule-based.
 
-Complexity of Setup: Precision is Crucial
+# Complexity of Setup: Precision is Crucial
 Morphing only works well when the software fully understands your intent:
 
 Control entities – what is allowed to move (edges, surfaces, nodes)
@@ -29,7 +30,7 @@ Interference with connected parts
 
 It’s not just “dragging a line” — it’s about giving the solver rules it can trust.
 
-Where Box Morphing Comes In
+# Where Box Morphing Comes In
 When direct morphing is too rough or uncontrolled, Box Morphing (in ANSA) or Morphing Volume (in HyperMesh) is a better choice.
 This approach surrounds your geometry in a control box, where selected faces or edges act as morph handles.
 
